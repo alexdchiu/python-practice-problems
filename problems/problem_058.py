@@ -24,17 +24,12 @@
 
 def group_cities_by_state(list):
   result = {}
-  for city in list:
-    # separate city and state 
-    split_cities = city.split(", ")
-    for split_city in split_cities:
-      key = split_city[1]
-      value = split_city[0]
-      if key in result == True:
-        result[key].append(value)
-      else:
-        result[key] = value
-    return result
-    # use state as key identifier 
-    # see if state already exists in result 
-    # if state exists already, append city to list value for corresponding state key
+  for place in list:
+    city, state = place.split(", ")
+    if state not in result:
+      result[state] = []
+      result[state].append(city)
+    else:
+      result[state].append(city)
+  return result
+

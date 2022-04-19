@@ -21,3 +21,17 @@
 # You may want to look at the built-in Python functions
 # "ord" and "chr" for this problem
 
+# latin alphabet upper 65-90
+# latin alphabet lower 97-122
+def shift_letters(str):
+  result = ""
+  for letter in str:
+    if letter == "Z":
+      new_letter = "A"
+    elif letter == "z":
+      new_letter = "a"
+    else:
+      new_letter = chr(ord(letter) + 1)
+    result = result + new_letter
+  return result
+

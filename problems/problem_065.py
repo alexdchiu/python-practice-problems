@@ -17,3 +17,13 @@
 #
 # You may want to look at the built-in "abs" function
 
+def biggest_gap (list):
+  result = 0
+  i = 1
+  while i < len(list):
+    delta = abs(list[i] - list[i - 1])
+    if delta > result:
+      result = delta
+    i = i + 1
+  
+  return result

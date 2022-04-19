@@ -28,3 +28,15 @@
 # at the last one you just wrote unless you really must.
 
 
+class Person:
+  def __init__ (self, name, hate, love):
+    self.hate = hate
+    self.love = love
+
+  def taste(self, food):
+    if food in self.love:
+      return True
+    elif food in self.hate:
+      return False
+    else:
+      return None

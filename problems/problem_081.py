@@ -15,7 +15,40 @@
 #                                + " legs and is primarily "
 #                                + self.primary_color
 #
-#
+
+class Animal:
+  def __init__ (self, number_of_legs, primary_color):
+    self.number_of_legs = number_of_legs
+    self.primary_color = primary_color
+  
+  def describe(self):
+    print(self.__class__.__name__)
+    return (
+      self.__class__.__name__
+      + " has "
+      + str(self.number_of_legs)
+      + " legs and is primarily "
+      + self.primary_color
+    )
+
+  
+class Dog(Animal):
+  def speak(self):
+    return "Bark!"
+
+class Cat(Animal):
+  def speak(self):
+    return "Miao!"
+
+class Snake(Animal):
+  def speak(self):
+    return "Sssssss!"
+  
+
+fido = Dog(4,"brown")
+print(fido.describe())
+
+
 # Name:       Dog, inherits from Animal
 #
 # Required state:       inherited from Animal

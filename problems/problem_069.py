@@ -22,6 +22,38 @@
 # There is pseudocode for you to guide you.
 
 
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.scores = []
+    
+    def add_score(self, score):
+        self.scores.append(score)
+    
+    def get_average(self):
+        sum = 0
+        if len(self.scores) == 0:
+            return None
+        for score in self.scores:
+            sum = sum + score
+        return sum / len(self.scores)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # class Student
     # method initializer with required state "name"
         # self.name = name
@@ -35,3 +67,4 @@
             # return None
         # returns the sum of the scores divided by
         # the number of scores
+
