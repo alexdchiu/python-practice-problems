@@ -20,7 +20,6 @@
 #
 # There is pseudocode to guide you.
 
-def add_csv_lines(csv_lines):
     # result_list = new empty list
     result = []
     # for each item in the csv_lines
