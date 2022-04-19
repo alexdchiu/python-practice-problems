@@ -13,3 +13,11 @@
 #     * input:   3
 #       returns: 1/2 + 2/3 + 3/4
 
+def sum_fraction_sequence(x):
+  i = 1
+  sum = 0
+  while i <= x:
+    frac = i / (i + 1)
+    sum = sum + frac
+    i += 1
+  return sum

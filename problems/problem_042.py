@@ -13,4 +13,10 @@
 # Look up the zip function to help you with this problem.
 
 def pairwise_add(list1, list2):
+    combo_list = zip(list1, list2)
+    result = []
+    for item1, item2 in combo_list:
+        sum = item1 + item2
+        result.append(sum)
+    return result
     pass

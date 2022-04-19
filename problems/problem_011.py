@@ -6,4 +6,8 @@
 # do similarly, here.
 
 def is_divisible_by_5(number):
+    if number % 5 == 0:
+        return "buzz"
+    else:
+        return number
     pass

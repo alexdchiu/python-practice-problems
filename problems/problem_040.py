@@ -22,12 +22,21 @@
 
 def add_csv_lines(csv_lines):
     # result_list = new empty list
+    result = []
     # for each item in the csv_lines
+    for item in csv_lines:
         # pieces = split the item on the comma
+        pieces = item.split(",")
         # line_sum = 0
+        line_sum = 0
         # for each piece in pieces
+        for piece in pieces:
             # value = convert the piece into an int
+            value = int(piece)
             # add the value to sum
+            line_sum = line_sum + value
         # append sum to the result_list
+        result.append(line_sum)
     # return result_list
+    return result
     pass

@@ -14,4 +14,10 @@
 # at the last one you just wrote unless you really must.
 
 def calculate_average(values):
+    if len(values) == 0:
+        return None
+    sum = 0
+    for num in values:
+        sum = sum + num
+    return sum / len(values)
     pass

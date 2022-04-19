@@ -20,4 +20,11 @@
 # Look up the enumerate function to help you with this problem.
 
 def find_indexes(search_list, search_term):
+    if search_term not in search_list:
+        return []
+    result = []
+    for index, item in enumerate(search_list):
+        if item == search_term:
+            result.append(index)
+    return result
     pass

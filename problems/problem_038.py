@@ -16,7 +16,12 @@
 
 def reverse_dictionary(dictionary):
     # new_dictionary = new empty dictionary
+    new_dictionary = {}
+    for key in dictionary:
+        value = dictionary[key]
+        new_dictionary[value] = key
     # for each key, value in dictionary.items()
         # new_dictionary[value] = key
     # return new_dictionary
+    return new_dictionary
     pass

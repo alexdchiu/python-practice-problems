@@ -10,4 +10,13 @@
 # at the last one you just wrote unless you really must.
 
 def can_make_pasta(ingredients):
+    list = ["flour", "eggs", "oil"]
+    count = 0
+    for item in list:
+        if item in ingredients:
+            count = count + 1
+    if count == 3:
+        return True
+    else:
+        return False
     pass

@@ -13,4 +13,11 @@ def max_in_list(values):
         # if item is greater than the max value
             # max value = item
     # return the max value
+    if len(values) == 0:
+        return None
+    max = values[0]
+    for item in values:
+        if item > max:
+            max = item
+    return max
     pass

@@ -14,8 +14,13 @@
 
 def remove_duplicate_letters(s):
     # result = new empty string
+    result = ''
     # for every letter in the string s
         # if the letter is not in the result
             # add it to the end of the result
+    for letter in s:
+        if letter not in result:
+            result = result + letter
     # return the result
+    return result
     pass

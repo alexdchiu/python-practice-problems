@@ -27,7 +27,11 @@
 
 def pad_left(number, length, pad):
     # s = convert number to a string
+    result = str(number)
     # while the length of s is less than length
         # s = pad + s
+    while len(result) < length:
+        result = pad + result
     # return s
+    return result
     pass

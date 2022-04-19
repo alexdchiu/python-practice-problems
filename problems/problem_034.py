@@ -24,11 +24,19 @@
 
 def count_letters_and_digits(s):
     # number of letters = 0
+    num_let = 0
     # number of digits = 0
+    num_dig = 0
     # for each character c in s
+    for char in s:
         # if the character c is a digit (c.isdigit())
             # add one to the number of digits
+        if char.isdigit() == True:
+            num_dig = num_dig + 1
         # if the character c is a letter (c.isalpha())
             # add one to the number of letters
+        if char.isalpha() == True:
+            num_let = num_let + 1
     # return number of letters, number of digits
+    return num_let, num_dig
     pass

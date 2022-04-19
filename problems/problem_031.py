@@ -14,4 +14,10 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_squares(values):
+    if len(values) == 0:
+        return None
+    sum = 0
+    for i in values:
+        sum = sum + (i * i)
+    return sum
     pass

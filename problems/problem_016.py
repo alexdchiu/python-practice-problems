@@ -6,4 +6,8 @@
 # at the last one you just wrote unless you really must.
 
 def is_inside_bounds(x, y):
+    if x >= 0 and x <= 10 and y >= 0 and y <= 10:
+        return True
+    else:
+        return False
     pass

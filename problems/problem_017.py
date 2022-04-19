@@ -21,7 +21,11 @@ def is_inside_bounds(x, y, rect_x, rect_y, rect_width, rect_height):
     # and y is greater than or equal to rect_y
     # and x is less than or equal to rect_x + rect_width
     # and y is less than or equal to rect_y + rect_height
+    if x >= rect_x and y >= rect_y and x <= (rect_x + rect_width) and y <= (rect_y + rect_height):
+        return True
         # return True
     # Otherwise
         # return False
+    else:
+        return False
     pass

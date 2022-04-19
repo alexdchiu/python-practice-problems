@@ -15,4 +15,8 @@ def can_make_pasta(ingredients):
         # return True
     # Otherwise
         # return False
+    if "flour" in ingredients and "eggs" in ingredients and "oil" in ingredients:
+        return True
+    else:
+        return False
     pass

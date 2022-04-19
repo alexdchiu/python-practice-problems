@@ -26,3 +26,12 @@
             # counts[word] = 0
         # add one to counts[word]
     # return counts
+
+def count_word_frequencies(string):
+    words = string.split()
+    counts = {}
+    for word in words:
+        if word not in counts.keys():
+            counts[word] = 0
+        counts[word] = counts[word] + 1
+    return counts

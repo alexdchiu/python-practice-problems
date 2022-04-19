@@ -15,3 +15,7 @@
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
 
+def username_from_email(email_address):
+  end_index = email_address.index('@')
+  result = email_address[:end_index]
+  return result

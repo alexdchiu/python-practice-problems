@@ -10,9 +10,15 @@
 def calculate_average(values):
     # If there are no items in the list of values
         # return None
+    if len(values) == 0:
+        return None
     # sum = 0
+    sum = 0
     # for each item in the list of values
         # add it to the sum
+    for num in values:
+        sum = sum + num
     # return the sum divided by the number of items
     # in the list
+    return sum / len(values)
     pass

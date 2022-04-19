@@ -10,8 +10,14 @@
 def calculate_sum(values):
     # If there are no items in the list of values
         # return None
+    if len(values) == 0:
+        return None
     # sum = 0
+    sum = 0
     # for each item in the list of values
         # add it to the sum
+    for item in values:
+        sum = sum + item
     # return the sum
+    return sum
     pass

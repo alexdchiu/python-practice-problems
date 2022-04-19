@@ -11,4 +11,8 @@ def is_inside_bounds(x, y):
         # return True
     # Otherwise
         # return False
+    if x >= 0 and x <= 10 and y >= 0 and y <= 10:
+        return True
+    else:
+        return False
     pass

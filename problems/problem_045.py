@@ -29,10 +29,17 @@
 
 def make_sentences(subjects, verbs, objects):
     # sentences = new empty list
+    sentences = []
     # for each subject in subjects
+    for subject in subjects:
         # for each verb in verbs
+        for verb in verbs:
             # for each object in objects
+            for object in objects:
                 # sentence = subject + " " + verb + " " + object
+                sentence = subject + " " + verb + " " + object
                 # append sentence to sentences
+                sentences.append(sentence)
     # return sentences
+    return sentences
     pass

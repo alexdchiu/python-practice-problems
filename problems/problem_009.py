@@ -10,4 +10,10 @@
 # for string objects.
 
 def is_palindrome(word):
+    reversed_word_list = reversed(word)
+    reversed_word = "".join(reversed_word_list)
+    if reversed_word == word:
+        return True
+    else:
+        return False
     pass

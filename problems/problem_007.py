@@ -17,6 +17,10 @@ def is_palindrome(word):
 
     # If reversed_word equals word
         # return True
+    if reversed_word == word:
+        return True
     # Otherwise
         # return False
+    else:
+        return False
     pass

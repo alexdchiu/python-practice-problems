@@ -11,4 +11,10 @@
 # at the last one you just wrote unless you really must.
 
 def max_of_three(value1, value2, value3):
+    max = value1
+    if value2 >= max:
+        max = value2
+    if value3 >= max:
+        max = value3
+    return max
     pass

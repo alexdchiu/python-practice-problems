@@ -7,4 +7,7 @@
 # at the last one you just wrote unless you really must.
 
 def minimum_value(value1, value2):
-    pass
+    min = value1
+    if value2 < value1:
+        min = value2
+    return min

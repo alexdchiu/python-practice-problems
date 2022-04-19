@@ -15,8 +15,15 @@ def gear_for_day(is_workday, is_sunny):
     # If it is a workday and it is not sunny
         # Add "umbrella" to gear
         # gear.append("umbrella")
+    if is_workday == True and is_sunny == False:
+        gear.append("umbrella")
     # If it is a workday
         # Add "laptop" to gear
+    if is_workday == True:
+        gear.append("laptop")
     # Otherwise
         # Add "surfboard" to gear
+    if is_workday == False:
+        gear.append("surfboard")
     # Return the list of gear
+    return gear

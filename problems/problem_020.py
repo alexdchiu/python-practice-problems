@@ -10,6 +10,10 @@ def has_quorum(attendees_list, members_list):
     # If the num_attendees divided by the num_members is
     # greater than 0.5
         # return True
+    if len(attendees_list) / len(members_list) >= 0.5:
+        return True
     # Otherwise
         # return False
+    else:
+        return False
     pass

@@ -22,3 +22,12 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+def group_cities_by_state(list):
+  result = {}
+  for city in list:
+    # separate city and state 
+    split_city = city.split(", ")
+    print(split_city)
+    # use state as key identifier 
+    # see if state already exists in result 
+    # if state exists already, append city to list value for corresponding state key

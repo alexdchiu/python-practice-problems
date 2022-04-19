@@ -8,4 +8,8 @@
 # at the last one you just wrote unless you really must.
 
 def can_skydive(age, has_consent_form):
+    if age >= 18 or has_consent_form == True:
+        return True
+    else:
+        return False
     pass

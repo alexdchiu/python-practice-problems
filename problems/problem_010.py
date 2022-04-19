@@ -12,4 +12,8 @@ def is_divisible_by_3(number):
         # return "fizz"
     # Otherwise
         # return the number
+    if number % 3 == 0:
+        return "fizz"
+    else:
+        return number
     pass

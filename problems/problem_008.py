@@ -16,4 +16,9 @@ def is_palindrome(word):
     # ["o", "l", "l", "e", "h"] becomes "olleh"
     reversed_word = "".join(reversed_list_of_letters)
 
+    if reversed_word == word:
+        return True
+    else:
+        return False
+
     pass

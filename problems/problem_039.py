@@ -16,4 +16,9 @@
 # at the last one you just wrote unless you really must.
 
 def reverse_dictionary(dictionary):
+    new_dictionary = {}
+    for key in dictionary:
+        value = dictionary[key]
+        new_dictionary[value] = key
+    return new_dictionary
     pass
